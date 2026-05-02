@@ -1,0 +1,63 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------- Global base tweaks -------- */
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
+  h2 {
+    @apply text-2xl font-semibold;
+  }
+
+  h3 {
+    @apply text-sm font-medium text-gray-400;
+  }
+}
+
+/* -------- Reusable components -------- */
+@layer components {
+  .card {
+    @apply bg-gray-900 border border-gray-800 rounded-lg p-6;
+  }
+
+  .card-title {
+    @apply text-sm text-gray-400 mb-2;
+  }
+
+  .stat-number {
+    @apply text-3xl font-bold;
+  }
+
+  .positive {
+    @apply text-xs text-green-400;
+  }
+
+  .news-item {
+    @apply space-y-1;
+  }
+
+  .news-title {
+    @apply font-medium;
+  }
+
+  .news-time {
+    @apply text-xs text-gray-400;
+  }
+
+  .badge {
+    @apply inline-block text-xs px-3 py-1 rounded-full;
+  }
+
+  .badge-blue {
+    @apply bg-blue-600/20 text-blue-400;
+  }
+}
